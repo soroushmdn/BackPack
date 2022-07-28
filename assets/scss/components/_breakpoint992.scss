@@ -1,0 +1,135 @@
+@media (max-width: 992px) {
+  // @@@@@@@@@@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@@@@@@@@@@@
+
+  .collection__container {
+    gap: 2rem;
+  }
+
+  .collection__content {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  .collection__img {
+    width: 130px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ NEW @@@@@@@@@@@@@@@@@@@@@@@
+
+  .new__swiper {
+    max-width: 700px;
+  }
+
+  .new__card {
+    width: 220px;
+  }
+
+  .new__tag {
+    width: 35px;
+    height: 45px;
+    left: 0.8rem;
+  }
+
+  .new__img {
+    height: 160px;
+    margin-bottom: 0.5rem;
+  }
+
+  .new__title {
+    font-size: 1.2rem;
+  }
+
+  .new__description {
+    margin-bottom: 0.7rem;
+  }
+
+  .new__price {
+    margin: 0 0 0.8rem 0.8rem;
+  }
+
+  .new__btn {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ OFFER @@@@@@@@@@@@@@@@@@@@@@@
+
+  .offer__title {
+    font-size: 2.5rem;
+  }
+
+  .offer__description {
+    font-size: 1.3rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ PRODUCTS @@@@@@@@@@@@@@@@@@@@@@@
+
+  .products__container {
+    gap: 1.5rem 1rem;
+  }
+
+  .products__card {
+    padding: 0.5rem;
+  }
+
+  .products__title {
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .products__img {
+    height: 200px;
+  }
+
+  .products__spec {
+    column-gap: 0.1rem;
+    font-size: 0.7rem;
+  }
+
+  .products__spec i {
+    font-size: 0.9rem;
+  }
+
+  .products__price {
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@@@@@@@@@@@
+
+  .newsletter__title {
+    font-size: 2rem;
+  }
+
+  .newsletter__description {
+    font-size: 1.1rem;
+  }
+
+  .newsletter__form {
+    padding: 0.6rem;
+  }
+
+  .newsletter__img {
+    height: 320px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ BRANDS @@@@@@@@@@@@@@@@@@@@@@@
+
+  .brands__container {
+    gap: 1.5rem;
+  }
+
+  .brands__img img {
+    height: 30px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@@
+
+  .footer__cards {
+    grid-template-columns: repeat(4, 30px);
+  }
+
+  .footer__group {
+    column-gap: 1rem;
+  }
+}

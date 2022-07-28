@@ -1,0 +1,77 @@
+@media (max-width: 374px) {
+  // @@@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@@@
+
+  .home__data {
+    padding: 7rem 0 9rem 0;
+  }
+
+  .home__title {
+    font-size: 2.2rem;
+  }
+
+  .home__description {
+    font-size: 1rem;
+  }
+
+  .home__features {
+    grid-template-columns: repeat(2, max-content);
+    gap: 1.5rem 0.8rem;
+  }
+
+  .home__feature-png {
+    width: 25px;
+  }
+
+  .home__feature-title {
+    font-size: 0.85rem;
+  }
+
+  .home__feature-subtitle {
+    font-size: 0.73rem;
+  }
+
+  .home__btn {
+    padding: 0.7rem 1rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ COLLECTION @@@@@@@@@@@@@@@@@@@@@@@
+
+  .collection__img {
+    width: 80px;
+  }
+
+  .collection__title {
+    font-size: 1.5rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ PRODUCTS @@@@@@@@@@@@@@@@@@@@@@@
+
+  .products__spec {
+    font-size: 0.8rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@@@@@@@@@@@
+
+  .newsletter__data {
+    width: 60%;
+  }
+
+  .newsletter__input {
+    padding: 0.6rem;
+  }
+
+  .newsletter__btn {
+    padding: 0.6rem;
+  }
+
+  .newsletter__img {
+    height: 220px;
+    right: -1.5rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@@
+
+  .footer__cards {
+    grid-template-columns: repeat(4, 30px);
+  }
+}

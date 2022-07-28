@@ -1,0 +1,33 @@
+.brands.section {
+  padding-bottom: 4rem;
+}
+
+.brands__container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.brands__img {
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+
+  background-color: hsl(212, 20%, 95%);
+  box-shadow: 0 0 1px hsl(212, 20%, 70%);
+  transition: 0.3s;
+}
+
+.brands__img img {
+  height: 35px;
+}
+
+.brands__img:nth-child(even) {
+  margin-top: 2rem;
+}
+
+.brands__img:hover {
+  box-shadow: 0 0 5px hsl(212, 20%, 70%);
+}

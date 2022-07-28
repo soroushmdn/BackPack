@@ -1,0 +1,39 @@
+@media (max-width: 1024px) {
+  // @@@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@@@
+
+  .home__data {
+    height: initial;
+    padding: 8rem 0 10rem 0;
+  }
+
+  .home__title {
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .home__description {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+  }
+
+  .home__features {
+    gap: 1.5rem 0.7rem;
+    margin-top: 2rem;
+  }
+
+  .home__feature {
+    gap: 0.3rem;
+  }
+
+  .home__feature-png {
+    width: 30px;
+  }
+
+  .home__feature-title {
+    font-size: 0.95rem;
+  }
+
+  .home__feature-subtitle {
+    font-size: 0.75rem;
+  }
+}
