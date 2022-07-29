@@ -6,5 +6,4 @@ Desktop design:
 
 
 Mobile design:
-
 ![127 0 0 1_5500_index html(iPhone 12 Pro)](https://user-images.githubusercontent.com/95019708/181833644-766bde08-fcd2-45d3-9018-913fb0f6d073.png)
