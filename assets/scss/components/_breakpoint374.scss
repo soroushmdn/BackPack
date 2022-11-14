@@ -69,6 +69,22 @@
     right: -1.5rem;
   }
 
+  // @@@@@@@@@@@@@@@@@@@@@@ BEST @@@@@@@@@@@@@@@@@@@@@@@
+
+  .best {
+    .best__swiper {
+      width: 100%;
+    }
+
+    .best__swiper-thumb-container {
+      width: 100%;
+
+      .best__swiper-thumb {
+        width: 90%;
+      }
+    }
+  }
+
   // @@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@@
 
   .footer__cards {
