@@ -160,6 +160,36 @@
     bottom: 0;
   }
 
+  // @@@@@@@@@@@@@@@@@@@@@@ BEST @@@@@@@@@@@@@@@@@@@@@@@
+
+  .best {
+    .best__swiper {
+      width: 300px;
+
+      .best__img {
+        padding: 2rem 1rem;
+
+        img {
+          width: 200px;
+          height: 300px;
+        }
+      }
+    }
+
+    .best__swiper-thumb-container {
+      width: 340px;
+
+      .best__swiper-thumb {
+        width: 320px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+  }
+
   // @@@@@@@@@@@@@@@@@@@@@@ BRANDS @@@@@@@@@@@@@@@@@@@@@@@
 
   .brands__container {
