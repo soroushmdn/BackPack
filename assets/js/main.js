@@ -11,13 +11,11 @@ onload = () => {
 
 const navToggle = document.getElementById('nav-toggle'),
   navMenu = document.getElementById('nav-list'),
-  main = document.getElementById('main'),
-  footer = document.getElementById('footer');
+  overlay = document.querySelector('.overlay');
 
 navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('show-menu');
-  main.classList.toggle('blur-background');
-  footer.classList.toggle('blur-background');
+  overlay.classList.toggle('show-overlay');
 });
 
 // @@@@@@@@@@@@@@@@@ REMOVE MENU @@@@@@@@@@@@@@@@@
@@ -27,9 +25,13 @@ const navLinks = document.querySelectorAll('.nav__link');
 navLinks.forEach((n) => {
   n.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
-    main.classList.remove('blur-background');
-    footer.classList.remove('blur-background');
+    overlay.classList.remove('show-overlay');
   });
+});
+
+overlay.addEventListener('click', () => {
+  navMenu.classList.remove('show-menu');
+  overlay.classList.remove('show-overlay');
 });
 
 // @@@@@@@@@@@@@@@@@ CHANGE HEADER BACKGROUND @@@@@@@@@@@@@@@@@
@@ -59,7 +61,9 @@ function scrollUp() {
     scrollUp.classList.remove('show-scrollup');
   }
 }
+
 //  @@@@@@@@@@@@@@@@@@ swiperjs.com @@@@@@@@@@@@@@@@@@
+//  @@@@@@@@@@@@@@@@@  NEW section  @@@@@@@@@@@@@@@@@@
 
 const newSwiper = new Swiper('.new__swiper', {
   spaceBetween: 15,
@@ -107,8 +111,44 @@ function activeProduct() {
   });
 }
 
-//  @@@@@@@@@@@@@@@@@@ scrollrevealjs.org @@@@@@@@@@@@@@@@@@
+//  @@@@@@@@@@@@@@@@@@ swiperjs.com @@@@@@@@@@@@@@@@@@
+//  @@@@@@@@@@@@@@@@@@ BEST section @@@@@@@@@@@@@@@@@@
 
+let bestSwiper = new Swiper('.best__swiper', {
+  loop: true,
+  loopedSlides: 5,
+  cssMode: true,
+  effect: 'fade',
+});
+
+let bestSwiperThumb = new Swiper('.best__swiper-thumb', {
+  loop: true,
+  loopedSlides: 5,
+  slidesPerView: 3,
+  spaceBetween: 35,
+  centeredSlides: true,
+  slideToClickedSlide: true,
+
+  breakpoints: {
+    576: {
+      spaceBetween: 50,
+    },
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+bestSwiperThumb.controller.control = bestSwiper;
+
+//  @@@@@@@@@@@@@@@@@@ scrollrevealjs.org @@@@@@@@@@@@@@@@@@
 const sr = ScrollReveal({
   origin: 'top',
   distance: '50px',
@@ -116,7 +156,9 @@ const sr = ScrollReveal({
   delay: 300,
 });
 
-sr.reveal(`.home__data, .new__swiper`);
+sr.reveal(
+  `.home__data, .new__swiper,.best__swiper ,.best__swiper-thumb-container`
+);
 sr.reveal(`.home__btn, .products__card`, {
   interval: 150,
 });
